@@ -1,4 +1,4 @@
-library(mtcars)
+data(mtcars)
 panel.cor <- function(x, y, digits=2, prefix="", cex.cor, ...)
 {
   usr <- par("usr"); on.exit(par(usr))
