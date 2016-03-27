@@ -1,0 +1,63 @@
+App Name: shinyproject1
+App Title: Modelling fuel efficiency with the mtcars data set
+Author: Reginald Kelvin Coker
+Date: 27th March 2016
+
+Synopsis:The purpose of this application is to build linear regression models using the mtcars dataset. All linear regression models assume Fuel efficiency, measured in miles per galon, as the response variable. With this assumption in mind, the application can build either bivariate or multi-variate linear regression models, along with some exploratory graphical analysis.
+
+Application Layout:
+The application is divided into two sections: Control Panel and Analysis Display
+
+1) Control Panel
+The control panel, on the left hand side of the screen, contains all the controls to build
+regression models and resize the output.
+
+Control Name:     Analysis Type
+Control Desc:     Switch between Bivariate and Multivariate analysis
+Control Type:     Dropdown selector
+Control Options:  Bivariate; Multivariate
+
+Control Name:     Regressor
+Control Desc:     Select the regressor or independent variable to model 
+                  fuel efficieny (mpg)
+Control Type:     Dropdown selector
+Control Options:  No. of Cylinders (cyl)
+                  Displacement (disp)
+                  Horsepower (hp)
+                  Drive Ratio (drat)
+                  Weight (wt)
+                  Quarter Second (qsec)
+                  Engine Shape/Type (vs)
+                  Transmission (am)
+                  No. of gears (gear)
+                  No. of carburettors (carb)
+
+Control Name:     Regressors
+Control Desc:     Select one or more regressors/independent variable/s to model 
+                  fuel efficiency (mpg)
+Control Type:     Multi selector
+Control Options:  Same as Regressor but allows multiple variable selection
+
+Control Name:     Plot1_Height
+Control Desc:     Change the height of the Graphical display
+Control Type:     Slider
+Control Options:  300px - 400px in increments of 50
+
+Control Name:     Plot1_Width
+Control Desc:     Change the width of the Graphical display
+Control Type:     Slider
+Control Options:  400px - 600px in increments of 50
+
+
+
+2) The Analysis Display
+
+The Analysis Display, is divided into two sections. The top half of this section
+is reserved for graphical output, while the bottom half is reserved for the linear regression output created from the selected options in the Control Panel.
+
+Under bivariate analysis, either a scatterplot or a boxplot is displayed, showing the relationship of Fuel efficiency (mpg) and the selected independent variable; scatterplots are displayed where the independent variable is continuous and a boxplot is displayed where the independent variable is a factor.
+
+Under multivariate analysis, a complete matrix is displayed, showing the relationship between all variables in the data-set. The matrix is divided into two sections along its diagonal. The top-half shows the relationship using scatterplots; the bottom diagonal shows the correlation coefficients between variables. The font size of the correlation coefficient is proportional to the strength of the relationship. The more positive or negative the relationship, the larger the font size.
+
+The bottom half of the Analysis section is reserved for a summary output of the linear model, including coefficients, p-values for significance as well as the residual some of squares, RSS, a good indicator of a linear fit.
+
